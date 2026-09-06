@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Jamila + Sara Portfolio"
+description = "A shared portfolio for Jamila Hallal and Sara Imad Omasha, showcasing full-stack development, secure bilingual-ready platforms, machine learning, and proposal-ready project experience."
+version = "1.0.0"
+id = "artifacts/jamila-hallal-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21929
+
+[services.development]
+run = "pnpm --filter @workspace/jamila-hallal-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/jamila-hallal-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/jamila-hallal-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21929"
+BASE_PATH = "/"

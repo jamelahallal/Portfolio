@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Minimalist JS Monogram</title>
+  <desc>Elegant minimalist monogram combining the letters J and S</desc>
+  <g fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round">
+    <!-- J -->
+    <path d="M178 105h82" stroke-width="18"/>
+    <path d="M219 105v232c0 48-25 72-63 72-35 0-57-20-57-52 0-13 4-24 12-33" stroke-width="18"/>
+
+    <!-- S -->
+    <path d="M365 151c-16-31-43-46-78-46-47 0-77 25-77 59 0 34 24 50 73 67l30 10c43 15 67 38 67 76 0 53-42 92-101 92-48 0-84-21-103-57" stroke-width="18"/>
+  </g>
+</svg>
